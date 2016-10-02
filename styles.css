@@ -1,0 +1,32 @@
+#intro,
+#home,
+#about,
+#portfolio_sect,
+#contact {
+  height: 1000px;
+}
+
+/*#intro {
+  background-image: url("jason_background.jpg")
+} */
+
+ h1 {
+  font-family: 'Ultra', serif;
+  float: right
+}
+
+#intro p {
+  clear: both;
+}
+
+/*#nav {
+  height: 70px;
+  position: fixed;
+}
+
+/* #nav a {
+  display: block;
+  float: left;
+  margin-left: 20px;
+
+}
