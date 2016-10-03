@@ -13,61 +13,92 @@
   <body>
 
     <!-- Nav Section -->
-    <div id="nav">
-     <ul><li><a href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#portfolio_sect">Portfolio</a></li>
-         <li><a href="#contact">Contact</a></li>
-     </ul>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+                <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#services">Portfolio</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#experience">Experience</a>
+            </li>
+        </ul>
     </div>
 
-    <!-- Intro Section -->
-    <div class="container-fluid">
-      <div id="intro" class="intro_section section row">
-        <div class="col-lg-12">
-          <h1 class="jason">Jason Campbell</h1>
-          <p><strong>Web Developer:</strong> Lorem ipsum dolor sit amet, et odio non tincidunt donec luctus ut, urna vel sed, morbi aenean quam, scelerisque pharetra. Laoreet aliquet, nunc aptent metus auctor in semper, mollis odio justo, consequat velit suspendisse enim donec, volutpat convallis. In in pretium. Posuere enim, primis sapien nonummy, commodo nullam metus ac in. Lacus sem vestibulum, non malesuada dis, justo ante rhoncus. Aenean nibh dictum scelerisque faucibus nibh, varius magna, facilisis morbi mauris a, pede eu accumsan. Mi magna sed aut risus sed, curabitur auctor arcu, dolor leo leo, ante scelerisque aenean ridiculus, ultrices eros id egestas. T</p>
-          <a class="btn btn-default page-scroll" href="#about">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </a>
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="jason">Jason Campbell</h1>
+                    <p><strong>Web Developer:</strong> Lorem ipsum dolor sit amet, et odio non tincidunt donec luctus ut, urna vel sed, morbi aenean quam, scelerisque pharetra. Laoreet aliquet, nunc aptent metus auctor in semper, mollis odio justo, consequat velit suspendisse enim donec, volutpat convallis. In in pretium. Posuere enim, primis sapien nonummy, commodo nullam metus ac in. Lacus sem vestibulum, non malesuada dis, justo ante rhoncus. Aenean nibh dictum scelerisque faucibus nibh, varius magna, facilisis morbi mauris a, pede eu accumsan. Mi magna sed aut risus sed, curabitur auctor arcu, dolor leo leo, ante scelerisque aenean ridiculus, ultrices eros id egestas. T</p>
+                    <a class="btn btn-default page-scroll" href="#about">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- About Section -->
-      <div id="about" class="about-section section row">
-          <div class="col-lg-12">
-              <h1>About</h1>
-          </div>
-      </div>
+    <!-- Portfolio Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Portfolio Section -->
-      <div id="portfolio_sect" class="portfolio-section section row">
-          <div class="col-lg-12">
-              <h1>Portfolio</h1>
-          </div>
-      </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Experience</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Contact Section -->
-      <div id="contact" class="contact-section section row">
-          <div class="col-lg-12">
-              <h1>Contact</h1>
-          </div>
-      </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.css"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
-    $(document).ready(function)(){
-    $('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-    });
-    return false;
-    });
-    </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/smooth_scroll.js"></script>
+
   </body>
 </html>

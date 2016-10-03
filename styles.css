@@ -1,14 +1,26 @@
-#intro,
-#home,
-#about,
-#portfolio_sect,
-#contact {
-  height: 1000px;
+
+body {
+    width: 100%;
+    height: 100%;
 }
 
-/*#intro {
-  background-image: url("jason_background.jpg")
-} */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
 
  h1 {
   font-family: 'Ultra', serif;
@@ -19,14 +31,37 @@
   clear: both;
 }
 
-/*#nav {
-  height: 70px;
-  position: fixed;
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
 }
 
-/* #nav a {
-  display: block;
-  float: left;
-  margin-left: 20px;
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
 
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.experience-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
 }
