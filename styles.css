@@ -69,10 +69,10 @@ html {
     text-align: center;
     background: #fff;
 }
-
+/*
 .navbar-collapse{
   position: fixed;
-}
+}*/
 
 .nav li a {
     font-family: 'Ultra', serif;
@@ -80,6 +80,10 @@ html {
     color: grey;
 }
 
+.navbar-header button{
+  text-align: center;
+
+}
 /*.navbar {
   display: none;
 }

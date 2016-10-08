@@ -7,6 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="styles.css" rel="stylesheet">
 
   </head>
@@ -15,30 +16,42 @@
 
 
       <!-- Collect the nav links -->
-  <nav class= "navbar navbar-default navbar-fixed-top">
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <!--  <li class="hidden"> -->
-            <li>
-                <a class="page-scroll" href="#intro">Home</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#about">About</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#services">Portfolio</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#contact">Contact</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#experience">Experience</a>
-            </li>
-        </ul>
-    </div>
-  </nav>
-
+  <div class="container">
+    <nav class= "navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <h3 class="collapsed">Jason Campbell</h3> -->
+          </div>
+              <div id="navbar1"class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!--  <li class="hidden"> -->
+                      <li class="active">
+                          <a class="page-scroll" href="#intro">Home</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#about">About</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#services">Portfolio</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#experience">Experience</a>
+                      </li>
+                  </ul>
+              </div>
+      </div>
+    </nav>
+</div>
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
@@ -101,6 +114,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/smooth_scroll.js"></script>
