@@ -2,6 +2,8 @@
 body {
     width: 100%;
     height: 100%;
+
+
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -31,11 +33,13 @@ html {
   clear: both;
 }
 
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: right;
     background: #fff;
+  /*  background-image: url(images/highway_ahead.jpg); */
 }
 
 .about-section {
@@ -64,4 +68,18 @@ html {
     padding-top: 150px;
     text-align: center;
     background: #fff;
+}
+
+.navbar-collapse{
+  position: fixed;
+}
+
+.nav li a {
+    font-family: 'Ultra', serif;
+    font-size: 20px;
+    color: grey;
+}
+
+/*.navbar {
+  display: none;
 }
