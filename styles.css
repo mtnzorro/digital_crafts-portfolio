@@ -53,8 +53,12 @@ html {
     padding-top: 150px;
     text-align: center;
     background: #fff;
-  /*  background-image: url(images/highway_ahead.jpg); */
+    background-image: url(images/277H.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .about-section {
     height: 100%;
