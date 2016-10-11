@@ -30,6 +30,7 @@ html {
 }
 
 .intro-section h1{
+  padding-top: 50px;
   font-size: 60px;
 }
 
@@ -65,13 +66,25 @@ html {
     padding-top: 150px;
     text-align: center;
     background: #eee;
+    background-image: url(images/headshot_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-section h1{
+  color: #D0D1C5;
 }
 
 .services-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: right;
     background: #fff;
+    background-image: url(images/301H.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services-section h1 {
+  float: right
 }
 
 .contact-section {
@@ -79,6 +92,13 @@ html {
     padding-top: 150px;
     text-align: center;
     background: #eee;
+    background-image: url(images/283H.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-section h1 {
+  float: right
 }
 
 .skills-section {
@@ -86,6 +106,9 @@ html {
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    background-image: url(images/134H.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*
 .navbar-collapse{
