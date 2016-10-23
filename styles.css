@@ -125,10 +125,12 @@ html {
   text-align: center;
 }
 
-.soc_media_buttons a{
-  font-size: 25px;
-  padding-bottom: 9px
+.soc_media_buttons a {
+    font-size: 40px;
+    padding-right: 95px;
+    color: #05C;
 }
+
 /*.navbar {
   display: none;
 } */
@@ -254,6 +256,7 @@ html {
 	transform: rotateY(0deg);
 	transition: transform 0.4s, opacity 0.1s;
 }
+
 
 @media screen and (max-width: 31.5em) {
 	.grid {
