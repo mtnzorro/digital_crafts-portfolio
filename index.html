@@ -6,9 +6,17 @@
     <title>Jason Campbell's Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="js/bootstrap.min.css" >
+    <link rel="stylesheet" href="animate.css">
     <link href="styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
 
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -28,7 +36,7 @@
             </button>
             <!-- <h3 class="collapsed">Jason Campbell</h3> -->
           </div>
-              <div id="navbar1"class="collapse navbar-collapse navbar-ex1-collapse">
+              <div id="navbar1" class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav">
                       <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <!--  <li class="hidden"> -->
@@ -36,14 +44,14 @@
                           <a class="page-scroll" href="#intro">Home</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#about">About</a>
+                          <a class="page-scroll" href="#about">Project 1</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#services">Portfolio</a>
+                          <a class="page-scroll" href="#services">Project 2</a>
                       </li>
                       <li>
 
-                          <a class="page-scroll" href="#skills">Skills</a>
+                          <a class="page-scroll" href="#skills">Project 3</a>
                       </li>
                       <li>
                           <a class="page-scroll" href="#contact">Contact</a>
@@ -58,13 +66,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 intro-bkg">
-                    <h1 class="jason">Jason Campbell</h1>
-                    <h3>Full Stack Web Developer</h3>
+                    <div class="animated zoomInDown">
+                      <h1 class="jason">Jason Campbell</h1>
+                      <h3>Full Stack Web Developer</h3>
+
+                    </div>
+
 
                     <!-- <p><strong>Web Developer:</strong> Lorem ipsum dolor sit amet, et odio non tincidunt donec luctus ut, urna vel sed, morbi aenean quam, scelerisque pharetra. Laoreet aliquet, nunc aptent metus auctor in semper, mollis odio justo, consequat velit suspendisse enim donec, volutpat convallis. In in pretium. Posuere enim, primis sapien nonummy, commodo nullam metus ac in. Lacus sem vestibulum, non malesuada dis, justo ante rhoncus. Aenean nibh dictum scelerisque faucibus nibh, varius magna, facilisis morbi mauris a, pede eu accumsan. Mi magna sed aut risus sed, curabitur auctor arcu, dolor leo leo, ante scelerisque aenean ridiculus, ultrices eros id egestas. T</p> -->
-                    <a class="btn btn-default page-scroll" href="#about">
+                    <!-- <a class="btn btn-default page-scroll" href="#about">
                       <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -74,8 +86,17 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>About</h1>
+                <div class="col-lg-12 animated animation-element">
+                    <h1>Project 1</h1>
+                    <div class="figure">
+                      <img class="proj_imgs" src="images/grillber3.png" alt="img01">
+                      <figcaption>
+                        <h3>Grillber</h3>
+                        <a href="http://grillber.com">Live Demo</a>
+                        <a href="https://github.com/mtnzorro/digital_crafts_grillber">Github</a>
+                      </figcaption>
+                    </div>
+                  </li>
                 </div>
             </div>
         </div>
@@ -84,153 +105,105 @@
     <!-- Portfolio Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Portfolio</h1>
-                        <ul class="grid cs-style-4">
-                        	<li>
-                        		<div class="figure">
-                        			<img src="images/grillber3.png" alt="img01">
-                        			<figcaption>
-                        				<h3>Grillber</h3>
-                                <a href="http://grillber.com">Website</a>
-                        				<a href="https://github.com/mtnzorro/digital_crafts_grillber">Github</a>
-                        			</figcaption>
-                        		</div>
-                        	</li>
-                        	<li>
-                          <div class="figure">
-                            <img src="images/blackjack1.png" alt="img01">
-                            <figcaption>
-                              <h3>Blackjack
-                              </h3>
-                              <span></span>
-                              <a href="https://github.com/mtnzorro/digital_crafts-week8-blackjack_jquery_game">Take a look</a>
-                            </figcaption>
-                          </div>
-                        	</li>
-                          <li>
-                          <div class="figure">
-                            <img src="images/mocha.png" alt="img01">
-                            <figcaption>
-                              <h3>Coming Soon</h3>
-                              <span>First project</span>
-                              <a href="http://github/mtnzorro">Take a look</a>
-                            </figcaption>
-                          </div>
-                          </li>
-                          <li>
-                          <div class="figure">
-                            <img src="images/mocha.png" alt="img01">
-                            <figcaption>
-                              <h3>Coming Soon</h3>
-                              <span>First project</span>
-                              <a href="http://github/mtnzorro">Take a look</a>
-                            </figcaption>
-                          </div >
-                          </li>
-                          <li>
-                          <div class="figure">
-                            <img src="images/mocha.png" alt="img01">
-                            <figcaption>
-                              <h3>Coming Soon</h3>
-                              <span>First project</span>
-                              <a href="http://github/mtnzorro">Take a look</a>
-                            </figcaption>
-                          </div>
-                        </li>
-                        <li>
-                        <div class="figure">
-                          <img src="images/mocha.png" alt="img01">
-                          <figcaption>
-                            <h3>Coming Soon</h3>
-                            <span>First project</span>
-                            <a href="http://github/mtnzorro">Take a look</a>
-                          </figcaption>
-                        </div>
-                      </li>
-
-                        </ul>
-
+            <div class="row ">
+                <div class="flex-wrapper-skill animated animation-element col-lg-12">
+                    <h1>Project 2</h1>
+                    <div class="figure">
+                      <img class="proj_imgs" src="images/memory.png" alt="img01">
+                      <figcaption>
+                        <h3>Memory Game</h3>
+                        <a href="http://monster-memory-game.surge.sh/">Website</a>
+                        <a href="https://github.com/mtnzorro/digital_crafts-week9-angular_card_memory_game">GitHub</a>
+                      </figcaption>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Project 3 Section -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Skills</h1>
-                    <div class = "badges">
-                        <figure>
-                          <img src="images/angular.png" alt="">
-                        </figure>
-                        <figure>
-                          <img src="images/javascript.png" alt="">
-                        </figure>
-                        <figure>
-                          <img src="images/nodejs.png" alt="">
-                        </figure>
-                        <figure>
-                          <img src="images/python.png" alt="">
-                        </figure>
+            <div class="flex-wrapper-skill animated animation-element">
+                <!-- <div class="col-lg-12"> -->
+                <h1>Project 3</h1>
+                <div class="figure">
+                  <img class = "proj_imgs" src="images/mocha.png" alt="img01">
+                  <figcaption>
+                    <h3>Ugly Sweater Store E-commerce</h3>
 
-                </div>
-                <div class = "badges">
-                    <figure>
-                      <img src="images/html.png" alt="">
-                    </figure>
-                    <figure>
-                      <img src="images/css.png" alt="">
-                    </figure>
-                    <figure>
-                      <img src="images/bootstrap.png" alt="">
-                    </figure>
-                    <figure>
-                      <img src="images/jquery.png" alt="">
-                    </figure>
 
-            </div>
-            </div>
+                  </figcaption>
+                </div >
+            <!-- </div> -->
         </div>
+      </div>
     </section>
     <!-- Skills Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact</h1>
-                    <div class="soc_media_buttons">
-                      <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/zorromtn">
-                         <span class="fa fa-twitter fa-2x"></span>
+    <section  class="contact-section">
+      <img class="headshot" src="images/headshot_4.jpg" alt="" />
 
-                       </a>
-                       <a class="btn btn-social-icon btn-github" href="https://github.com/mtnzorro">
-                          <span class="fa fa-github fa-2x"></span>
-                        </a>
-                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jcammtnzorro">
-                           <span class="fa fa-linkedin fa-2x"></span>
-                         </a>
-                         <a class="btn btn-social-icon btn-medium" href="https://medium.com/@zorromtn">
-                            <span class="fa fa-medium fa-2x"></span>
-                          </a>
-                       </div>
-                </div>
-            </div>
-        </div>
+
+        <div id="contact" class="flex-wrapper">
+    <span><h2>Contact: </h2></span>
+      <div class="soc_media_buttons">
+        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/zorromtn">
+           <span class="fa fa-twitter fa-2x"></span>
+
+         </a>
+         <a class="btn btn-social-icon btn-github" href="https://github.com/mtnzorro">
+            <span class="fa fa-github fa-2x"></span>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jcammtnzorro">
+             <span class="fa fa-linkedin fa-2x"></span>
+           </a>
+           <a class="btn btn-social-icon btn-medium" href="https://medium.com/@zorromtn">
+              <span class="fa fa-medium fa-2x"></span>
+            </a>
+         </div>
+          </div>
     </section>
+    <footer><div class="flex-wrapper-skill">
+        <!-- <div class="col-lg-12"> -->
+          <div class="skills_header">
+            <h3>Skills</h3>
+          </div><br>
+            <div class = "animated animation-element badges">
+                <figure>
+                  <img src="images/angular.png" alt="">
+                </figure>
+                <figure>
+                  <img src="images/javascript.png" alt="">
+                </figure>
+                <figure>
+                  <img src="images/nodejs.png" alt="">
+                </figure>
+                <figure>
+                  <img src="images/python.png" alt="">
+                </figure>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+            <figure>
+              <img src="images/html.png" alt="">
+            </figure>
+            <figure>
+              <img src="images/css.png" alt="">
+            </figure>
+            <figure>
+              <img src="images/bootstrap.png" alt="">
+            </figure>
+            <figure>
+              <img src="images/jquery.png" alt="">
+            </figure>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/smooth_scroll.js"></script>
+    </div>
+    <!-- </div> -->
+</div></footer>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/smooth_scroll.js"></script>
+
 
   </body>
 </html>

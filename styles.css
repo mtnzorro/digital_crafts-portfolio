@@ -48,13 +48,18 @@ html {
   clear: both;
 }
 
+.proj_imgs {
+  height : 85%;
+  width : 85%;
+}
 
 .intro-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
-    background-image: url(images/277H.jpg);
+    position: relative;
+    background-image: url(images/new_bkgd_intro.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -63,38 +68,49 @@ html {
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 50px;
+    /*padding-top: 150px;
+    text-align: center;*/
     background: #eee;
-    background-image: url(images/headshot_4.jpg);
+    /*background-image: url(images/headshot_4.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
-.about-section h1{
+/*.about-section h1{
   color: #D0D1C5;
-}
+}*/
 
 .services-section {
     height: 100%;
     padding-top: 50px;
     text-align: right;
     background: #fff;
-    /*background-image: url(images/301H.jpg);*/
+    /*background-image: url(images/301H.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 .services-section h1 {
   float: none
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+  padding-top: 90px;
+  display: flex;
+    /*height: 100%;*/
+
+
     background: #eee;
-    background-image: url(images/283H.jpg);
+
+}
+
+.contact-section  img{
+    height: 100%;
+
+    /*text-align: center;*/
+    /*background: #eee;*/
+    /*background-image: url(images/283H.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .contact-section h1 {
@@ -103,14 +119,22 @@ html {
 
 .skills-section {
     height: 100%;
-    padding-top: 150px;
+
     text-align: center;
     background: #fff;
-    background-image: url(images/134H.jpg);
+    /*background-image: url(images/134H.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+}
+.skills_header{
+  display: flex;
+  align-self: center;
 }
 
+/*.flex_skills{
+  display: flex;
+
+}*/
 /*.skills-section h1{
   color: #D0D1C5
 }*/
@@ -130,9 +154,13 @@ html {
 }
 
 .soc_media_buttons a {
-    font-size: 40px;
-    padding-right: 95px;
+    font-size: 25px;
+    /*padding-right: 95px;*/
     color: #05C;
+    display: inline-flex;
+    align-self: auto;
+
+
 }
 
 /*.navbar {
@@ -175,15 +203,19 @@ html {
 	position: absolute;
 	top: 0;
 	left: 0;
+  margin: 2px
 	padding: 20px;
 	background: #2c3f52;
 	color: #ed4e6e;
+  font-size: 15px
 }
 
 .grid figcaption h3 {
 	margin: 0;
 	padding: 0;
+  margin-bottom: 2px;
 	color: #fff;
+  font-size: 20px;
 }
 
 .grid figcaption span:before {
@@ -268,12 +300,40 @@ html {
 .badges{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-self: center;
+}
 
- margin-bottom: 30px;
- width: calc(55% - 4px);
- margin-left: 12px;
- float: right;
+.badges figure img{
+  margin: 0;
+  height: 80px;
+  width: 80px;
+}
+
+.flex-wrapper-skill{
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.headshot {
+  height: 100%;
+  width: 55%
+}
+
+/*footer {
+height : 30%;
+}*/
+.flex-wrapper{
+  display: flex;
+  margin-left: 5%;
+  font-family: 'Ultra', serif;
+  flex-direction: column;
+
 }
 @media screen and (max-width: 31.5em) {
 	.grid {
