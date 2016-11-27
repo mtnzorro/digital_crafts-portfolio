@@ -53,6 +53,11 @@ html {
   width : 85%;
 }
 
+.proj_2_flex{
+  display: flex;
+  justify-content: center;
+}
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -97,8 +102,6 @@ html {
   padding-top: 90px;
   display: flex;
     /*height: 100%;*/
-
-
     background: #eee;
 
 }
@@ -116,11 +119,15 @@ html {
 .contact-section h1 {
   /*float: right*/
 }
+.space-maker{
+  height: 300px;
+  background: #eee;
+}
 
 .skills-section {
     height: 100%;
-
-    text-align: center;
+    padding-top: 50px;
+    /*text-align: center;*/
     background: #fff;
     /*background-image: url(images/134H.jpg);
     background-size: cover;
@@ -129,6 +136,17 @@ html {
 .skills_header{
   display: flex;
   align-self: center;
+}
+.proj_flex_header{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  /*margin-left: 10%*/
+}
+.proj_links{
+  margin: 10px;
+    font-family: 'Ultra', serif;
+    text-align: center;
 }
 
 /*.flex_skills{
