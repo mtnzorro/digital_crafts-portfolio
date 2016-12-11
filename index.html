@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jason Campbell's Portfolio</title>
+    <script src="/js/angular.js"></script>
+    <script src="/js/angular-ui-router.js"></script>
+    <script src="portfolio.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
     <link rel="stylesheet" href="js/bootstrap.min.css" >
@@ -16,10 +19,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
-
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body ng-app="Portfolio" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 
 
@@ -41,20 +42,20 @@
                       <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <!--  <li class="hidden"> -->
                       <li class="active">
-                          <a class="page-scroll" href="#intro">Home</a>
+                          <a class="page-scroll" ui-sref="home">Home</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#about">Project 1</a>
+                          <a class="page-scroll" ui-sref="project1">Project 1</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#services">Project 2</a>
+                          <a class="page-scroll" ui-sref="project2">Project 2</a>
                       </li>
                       <li>
 
-                          <a class="page-scroll" href="#skills">Project 3</a>
+                          <a class="page-scroll" ui-sref="project3">Project 3</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#contact">Contact</a>
+                          <a class="page-scroll" ui-sref="contact">Contact</a>
                       </li>
 
                   </ul>
@@ -62,168 +63,12 @@
       </div>
     </nav>
 </div>
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 intro-bkg">
-                    <div class="animated zoomInDown">
-                      <h1 class="jason">Jason Campbell</h1>
-                      <h3>Full Stack Web Developer</h3>
-
-                    </div>
 
 
-                    <!-- <p><strong>Web Developer:</strong> Lorem ipsum dolor sit amet, et odio non tincidunt donec luctus ut, urna vel sed, morbi aenean quam, scelerisque pharetra. Laoreet aliquet, nunc aptent metus auctor in semper, mollis odio justo, consequat velit suspendisse enim donec, volutpat convallis. In in pretium. Posuere enim, primis sapien nonummy, commodo nullam metus ac in. Lacus sem vestibulum, non malesuada dis, justo ante rhoncus. Aenean nibh dictum scelerisque faucibus nibh, varius magna, facilisis morbi mauris a, pede eu accumsan. Mi magna sed aut risus sed, curabitur auctor arcu, dolor leo leo, ante scelerisque aenean ridiculus, ultrices eros id egestas. T</p> -->
-                    <!-- <a class="btn btn-default page-scroll" href="#about">
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a> -->
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 animated animation-element">
-                    <h1>Project 1</h1>
-                    <div class="figure">
-                      <img class="proj_imgs" src="images/grillber3.png" alt="img01">
-                      <span class="proj_2_flex">
-                      <figcaption >
-                        <div class="proj_flex_header">
-                        <h3 class="skills_header">Grillber: ECommerce WebApp</h3>
-                        <div class="skills_header">
-                          <a class="proj_links" href="http://grillber.com">Live Demo</a>
-                          <a class="proj_links" href="https://github.com/mtnzorro/digital_crafts_grillber">Github</a>
-                      </div>
-                          </div>
-                      </figcaption>
-                    </span>
-                    </div>
-                  </li>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row ">
-                <div class="flex-wrapper-skill animated animation-element col-lg-12">
-                    <h1>Project 2</h1>
-                    <div class="figure">
-                      <img class="proj_imgs" src="images/memory.png" alt="img01">
-                      <span class="proj_2_flex">
-                      <figcaption >
-                        <div class="proj_flex_header">
-                        <h3 class="skills_header">Memory Game</h3>
-                        <div class="skills_header">
-                        <a class="proj_links" href="http://monster-memory-game.surge.sh/">Live Demo</a>
-                        <a class="proj_links" href="https://github.com/mtnzorro/digital_crafts-week9-angular_card_memory_game">GitHub</a>
-                      </div>
-                          </div>
-                      </figcaption>
-                    </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project 3 Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="flex-wrapper-skill animated animation-element">
-                <!-- <div class="col-lg-12"> -->
-                <h1>Project 3</h1>
-                <div class="figure">
-                  <img class = "proj_imgs" src="images/mocha.png" alt="img01">
-                  <span class="proj_2_flex">
-                  <figcaption class="proj_flex_header">
-                    <h3 class="skills_header">Ugly Sweater Store E-commerce</h3>
-                    <div class="skills_header">
-                    <a class="proj_links" href="http://monster-memory-game.surge.sh/">Live Demo</a>
-                    <a class="proj_links" href="https://github.com/mtnzorro/digital_crafts-week9-angular_card_memory_game">GitHub</a>
-                  </div>
-                    </figcaption>
-                    </span>
-                </div >
-            <!-- </div> -->
-        </div>
-      </div>
-    </section>
-    <!-- Skills Section -->
-
-    <section  class="contact-section">
-      <img class="headshot" src="images/headshot_4.jpg" alt="" />
-
-
-        <div  class="flex-wrapper">
-    <span><h2>Contact: </h2></span>
-      <div class="soc_media_buttons">
-        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/zorromtn">
-           <span class="fa fa-twitter fa-2x"></span>
-
-         </a>
-         <a class="btn btn-social-icon btn-github" href="https://github.com/mtnzorro">
-            <span class="fa fa-github fa-2x"></span>
-          </a>
-          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jcammtnzorro">
-             <span class="fa fa-linkedin fa-2x"></span>
-           </a>
-           <a class="btn btn-social-icon btn-medium" href="https://medium.com/@zorromtn">
-              <span class="fa fa-medium fa-2x"></span>
-            </a>
-         </div>
-          </div>
-    </section>
-    <footer><div class="flex-wrapper-skill">
-        <!-- <div class="col-lg-12"> -->
-          <div class="skills_header">
-            <h3 >Skills</h3>
-          </div><br>
-            <div class = "animated animation-element badges">
-                <figure>
-                  <img src="images/angular.png" alt="">
-                </figure>
-                <figure>
-                  <img src="images/javascript.png" alt="">
-                </figure>
-                <figure>
-                  <img src="images/nodejs.png" alt="">
-                </figure>
-                <figure>
-                  <img src="images/python.png" alt="">
-                </figure>
-
-
-            <figure>
-              <img src="images/html.png" alt="">
-            </figure>
-            <figure>
-              <img src="images/css.png" alt="">
-            </figure>
-            <figure>
-              <img src="images/bootstrap.png" alt="">
-            </figure>
-            <figure>
-              <img src="images/jquery.png" alt="">
-            </figure>
-
-    </div>
-    <!-- </div> -->
-</div></footer>
-<div id="contact" class="space-maker">
-
-</div>
-
-<!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/smooth_scroll.js"></script>
-
-
+    <ui-view></ui-view>
   </body>
+  <!-- Scrolling Nav JavaScript -->
+  <!-- <script src="js/jquery.easing.min.js"></script>
+  <script src="js/smooth_scroll.js"></script> -->
 </html>
