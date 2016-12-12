@@ -60,6 +60,10 @@ padding-left: 0
   clear: both;
 }
 
+.figure{
+  height: 60em;
+}
+
 .proj_imgs {
   width : 60%;
 }

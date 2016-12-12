@@ -1,7 +1,7 @@
 var app = angular.module('Portfolio', ['ui.router']);
 
 app.controller('homeController', function($scope, $stateParams, $state) {
-
+  $scope.proj1_on = true;
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
